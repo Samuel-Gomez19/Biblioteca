@@ -6,9 +6,9 @@ namespace Biblioteca.Dominio.Enums
 {
     public enum EstadoMulta
     {
-        pagada = 0,
+        Pendiente = 0,
 
-        pendiente = 1,
+        Pagada= 1,
 
         
     }

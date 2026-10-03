@@ -9,21 +9,24 @@ namespace Biblioteca.Dominio.Entities
     public class Libro: EntityBase
     {
 
-        public string NombreLibro { get; set; } = String.Empty;
+        public string NombreLibro { get; set; } = string.Empty;
 
-        public string NombreAutor { get; set; } = String.Empty;
+        public string NombreAutor { get; set; } = string.Empty;
 
-        public DateTime? HoraPrestamo { get; set; }
-
-        public DateTime? HoraRegreso { get; set; }
 
         public GenerosLibros Genero { get; set; }
 
         // Navegation properties
 
-        public Socio Socios { get; set; } = null!;
+   
 
-        public Prestamo Prestamos { get; set; } = null!;
+       
+
+     
+        public ICollection<PrestamoLibro> PrestamoLibros { get; set; } = new List<PrestamoLibro>();
+
+   
+        
 
     }
 }

@@ -14,7 +14,7 @@ namespace Biblioteca.Dominio.Enums
 
         Historia = 3,
 
-        Cientitifico = 4,
+        Cientifico = 4,
 
         Infantil = 5,
 

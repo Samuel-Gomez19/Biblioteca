@@ -10,14 +10,18 @@ namespace Biblioteca.Dominio.Entities
 
         public DateTime FinalPrestamo { get; set; }
 
-        public float Pago {  get; set;}
+        public DateTime? FechaDevolucion { get; set; }
+
+        public decimal Pago {  get; set;}
 
 
         //navegation properties 
 
-        public Socio Socios { get; set; } = null!;
+        public Socio Socio { get; set; } = null!;
 
-        public ICollection<Libro> Libros { get; set;  } = new List<Libro>();
+        public int SocioId { get; set; }
+
+        public ICollection<PrestamoLibro> PrestamoLibros { get; set; } = new List<PrestamoLibro>();
 
         public ICollection<Multa> Multas { get; set; } = new List<Multa>();
 

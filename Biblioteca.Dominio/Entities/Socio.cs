@@ -6,17 +6,17 @@ namespace Biblioteca.Dominio.Entities
 {
     public class Socio: EntityBase
     {
-        public string PrimerNombre { get; set; } = String.Empty;
+        public string PrimerNombre { get; set; } = string.Empty;
 
-        public string Apellido { get; set; } = String.Empty;
+        public string Apellido { get; set; } = string.Empty;
 
-        public string NumeroTelefono { get; set; } = String.Empty;
+        public string NumeroTelefono { get; set; } = string.Empty;
 
-        public string CedulaCiudadania { get; set; } = String.Empty;
+        public string CedulaCiudadania { get; set; } = string.Empty;
 
         // Navigation Properties
 
-        public ICollection<Libro>Libros { get; set; } = new List<Libro>();
+      
 
         public ICollection<Prestamo> Prestamos { get; set; } = new List<Prestamo>();
 

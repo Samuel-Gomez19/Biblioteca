@@ -7,7 +7,7 @@ namespace Biblioteca.Dominio.Entities
 {
     public class Multa:EntityBase
     {
-        public float Monto { get; set; }
+        public decimal Monto { get; set; }
 
         public string? Comentario { get; set; }
 
@@ -15,8 +15,11 @@ namespace Biblioteca.Dominio.Entities
 
         //Navegation Property
 
-        public Socio Socios { get; set; } = null!;
+        public int SocioId { get; set; }
+        public Socio Socio { get; set; } = null!;
 
-        public Prestamo Prestamos { get; set; } = null!;
+        public Prestamo Prestamo { get; set; } = null!;
+
+        public int PrestamoId { get; set; }
     }
 }
