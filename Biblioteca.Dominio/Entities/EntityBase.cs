@@ -10,7 +10,10 @@ namespace Biblioteca.Dominio.Entities
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        public DateTime? UpdateAt {  get; set; }
+        public DateTime? UpdatedAt {  get; set; }
+
+        public bool Eliminado { get; set; }
+        public DateTime? EliminadoEn { get; set; }
 
 
 

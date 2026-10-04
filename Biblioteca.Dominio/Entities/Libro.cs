@@ -20,9 +20,7 @@ namespace Biblioteca.Dominio.Entities
 
    
 
-       
-
-     
+ 
         public ICollection<PrestamoLibro> PrestamoLibros { get; set; } = new List<PrestamoLibro>();
 
    
